@@ -62,7 +62,7 @@ THE SOFTWARE.
     const every = ( dataLength - 2 ) / ( threshold - 2 ); // Bucket size. Leave room for start and end data points
     let a = 0; // Initially a is the first point in the triangle
 
-    [sampledX[ 0 ], sampledY[ 0 ]] = [x[ a ], y[ a ]];
+    [sampledX[ 0 ], sampledY[ 0 ]] = [x[ 0 ], y[ 0 ]];
     [sampledX[ threshold - 1 ], sampledY[ threshold - 1 ]] = [x[ dataLength-1 ], y[dataLength-1 ]];
 
     for (let i = 0; i < threshold - 2; i++ ) {
